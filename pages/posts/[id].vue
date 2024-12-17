@@ -3,7 +3,7 @@
         <Title>post nr. {{ $route.params.id }} - {{ title }}</Title>
 
         <h3 class="text-3xl font-bold">
-            <NuxtLink to="/posts/1">post title</NuxtLink>
+            <NuxtLink :to="`/posts/${post.id}`">{{ post.title }}</NuxtLink>
         </h3>
 
         <MetaInfo
@@ -12,7 +12,7 @@
         />
 
         <div class="post-content mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci accusamus similique hic non earum iure eius amet animi ea fugit, eveniet cumque excepturi mollitia sint laboriosam laudantium possimus nobis!
+            {{ post.body }}
         </div>
     </div>
 </template>
