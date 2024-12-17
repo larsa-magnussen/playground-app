@@ -12,9 +12,10 @@
             haha cool text
         </div>
         <div class="mt-4">
-            <NuxtLink to="/posts/1" class="bg-blue-700 hover:bg-blue-800 text-white rounded inlinke-block px-4 py-2">
-                read more
-            </NuxtLink>
+            <Button
+                label="read more"
+                :link="`/posts/${post.id}`"
+            />
         </div>
     </div>
 </template>
