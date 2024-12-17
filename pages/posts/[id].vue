@@ -6,11 +6,10 @@
             <NuxtLink to="/posts/1">post title</NuxtLink>
         </h3>
 
-        <div class="post-meta text-gray-700 flex items-center space-x-2">
-            <div>date</div>
-            <div>&middot;</div>
-            <div>name</div>
-        </div>
+        <MetaInfo
+            :left-meta="post.created_at"
+            :right-meta="post.title"
+        />
 
         <div class="post-content mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci accusamus similique hic non earum iure eius amet animi ea fugit, eveniet cumque excepturi mollitia sint laboriosam laudantium possimus nobis!
