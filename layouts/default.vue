@@ -2,11 +2,13 @@
     <Title>
         {{ title }}
     </Title>
-    <div class="bg-gray-100 min-h-screen text-gray-900">
-        <nav class="bg-white shadow text-lg px-6 py-6">
+    <div class="bg-gray-700 min-h-screen text-purple-400">
+        <nav class="bg-gray-800 shadow text-purple-300 px-6 py-2">
             <div class="container mx-auto flex items-center justify-between px-6">
-                <div>
-                    <NuxtLink to="/">Logo</NuxtLink>
+                <div class="h-16">
+                    <NuxtLink to="/">
+                        <img class="max-h-full" src="../images/logo.png" alt="logo">
+                    </NuxtLink>
                 </div>
                 <div>
                     <ul class="flex space-x-12">
