@@ -19,13 +19,7 @@
 
 <script setup>
     const title = useState('title');
-    const post = ref({});
-
     const postId = useRoute().params.id;
-
-    onMounted(() => {
-        fetch(`http://localhost/api/posts/${postId}`)
-            .then(response => response.json())
-            .then(data => post.value = data);
-    });
+    const { data: post } = await useFetch(`http://localhost/api/posts/${postId}`);
+    const formattedDate = useFormattedDate(post.value.created_at);
 </script>

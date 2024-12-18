@@ -11,13 +11,5 @@
 </template>
 
 <script setup>
-    const posts = ref([]);
-
-    onMounted(() => {
-        fetch('http://localhost/api/posts')
-            .then(response => response.json())
-            .then(data => posts.value = data);
-    });
-    console.log(posts);
-
+    const { data: posts } = await useFetch(`http://localhost/api/posts`);
 </script>
