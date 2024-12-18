@@ -30,5 +30,5 @@
         },
     });
 
-    var formatedDate = new Date(props.post.created_at).toLocaleDateString('no-NO');
+    var formatedDate = useFormattedDate(props.post.created_at);
 </script>
