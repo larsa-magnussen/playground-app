@@ -7,8 +7,8 @@
         </h3>
 
         <MetaInfo
-            :left-meta="post.created_at"
-            :right-meta="post.title"
+            :left-meta="formattedDate"
+            :right-meta="post.user.name"
         />
 
         <div class="post-content mt-4">
