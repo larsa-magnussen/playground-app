@@ -19,7 +19,10 @@
 
 <script setup>
     const title = useState('title');
+
+    const nuxtApp = useNuxtApp();
     const postId = useRoute().params.id;
-    const { data: post } = await useFetch(`http://localhost/api/posts/${postId}`);
-    const formattedDate = useFormattedDate(post.value.created_at);
+    const post = await nuxtApp.$apiFetch(`/api/posts/${postId}`);
+
+    const formattedDate = useFormattedDate(post.created_at);
 </script>

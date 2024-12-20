@@ -1,5 +1,5 @@
 <template>
-    <div class="post-meta font-semibold text-white flex items-center space-x-2">
+    <div class="post-meta font-semibold text-gray-300 flex items-center space-x-2">
         <div>{{ leftMeta }}</div>
         <div>&middot;</div>
         <div>{{ rightMeta }}</div>

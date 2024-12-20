@@ -11,5 +11,6 @@
 </template>
 
 <script setup>
-    const { data: posts } = await useFetch(`http://localhost/api/posts`);
+    const nuxtApp = useNuxtApp();
+    const posts = await nuxtApp.$apiFetch('/api/posts');
 </script>
