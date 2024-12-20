@@ -5,11 +5,10 @@
                 {{ post.title }}
             </NuxtLink>
         </h3>
-        <div class="post-meta font-semibold text-white flex items-center space-x-2">
-            <div>{{ formatedDate }}</div>
-            <div>&middot;</div>
-            <div>{{ post.user.name }}</div>
-        </div>
+        <MetaInfo
+            :left-meta="formatedDate"
+            :right-meta="post.user.name"
+        />
         <div class="post-preview leading-relaxed line-clamp-3 mt-4">
             {{ post.body }}
         </div>
