@@ -5,7 +5,7 @@
                 {{ post.title }}
             </NuxtLink>
         </h3>
-        <div class="post-meta font-semibold text-purple-200 flex items-center space-x-2">
+        <div class="post-meta font-semibold text-white flex items-center space-x-2">
             <div>{{ formatedDate }}</div>
             <div>&middot;</div>
             <div>{{ post.user.name }}</div>
