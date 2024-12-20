@@ -6,7 +6,7 @@
             </NuxtLink>
         </h3>
         <MetaInfo
-            :left-meta="formatedDate"
+            :left-meta="formattedDate"
             :right-meta="post.user.name"
         />
         <div class="post-preview leading-relaxed line-clamp-3 mt-4">
@@ -29,5 +29,5 @@
         },
     });
 
-    var formatedDate = useFormattedDate(props.post.created_at);
+    var formattedDate = useFormattedDate(props.post.created_at);
 </script>
