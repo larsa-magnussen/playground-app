@@ -10,6 +10,7 @@
                         <img class="max-h-full" src="../images/logo.png" alt="logo">
                     </NuxtLink>
                 </div>
+
                 <div>
                     <ul class="flex space-x-12">
                         <li>

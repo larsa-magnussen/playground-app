@@ -5,13 +5,16 @@
                 {{ post.title }}
             </NuxtLink>
         </h3>
+
         <MetaInfo
             :left-meta="formattedDate"
             :right-meta="post.user.name"
         />
+
         <div class="post-preview leading-relaxed line-clamp-3 mt-4">
             {{ post.body }}
         </div>
+
         <div class="mt-4">
             <Button
                 label="read more"
