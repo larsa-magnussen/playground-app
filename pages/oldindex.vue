@@ -62,8 +62,8 @@
 
     // only select certain keys from object
     const { data: user } = await useFetch(
-            'https://jsonplaceholder.typicode.com/users/1',
-            { pick: ['id', 'name', 'email']}
-        );
+        'https://jsonplaceholder.typicode.com/users/1',
+        { pick: ['id', 'name', 'email']}
+    );
 
 </script>
